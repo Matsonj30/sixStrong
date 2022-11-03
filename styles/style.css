@@ -1,0 +1,28 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background-color: #FAFAFA;
+}
+
+.landing {
+  width: 100%;
+  display: block;
+  background: rgb(34, 167, 195);
+  background: linear-gradient(278deg, rgb(34, 167, 195) 0%, rgb(15, 51, 191) 100%);
+}
+.landing .navBar {
+  height: 200px;
+  width: 100%;
+}
+.landing .background {
+  height: 40vw;
+  width: 100%;
+}
+.landing img {
+  height: 100%;
+  width: 100%;
+}/*# sourceMappingURL=style.css.map */
