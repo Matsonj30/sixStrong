@@ -1,4 +1,10 @@
 .navBar{
+    .burgerMenu{
+        position: absolute;
+        top: 28px;
+        right: 20px;
+        z-index: 3;
+    }   
     input{
         display: block;
         position: absolute;
@@ -28,6 +34,7 @@
     }
     input:checked ~ span{
         transform: rotate(45deg) translate(0px, 0px);
+        background-color: black;
     }
    
     input:checked ~ span:nth-child(3){
@@ -37,9 +44,33 @@
     input:checked ~ span:nth-child(4){
         transform: rotate(-45deg) translate(-5px, 4px);
     }
-    .burgerMenu{
+   
+    #menu{
+        background-color: $primaryColor;
+
+        width: 150px;
+        height: 400px;
+        padding: 0px 10px;
         position: absolute;
-        top: 28px;
-        right: 20px;
-    }   
+        top: 0;
+        right: 0;
+        transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
+        transform: translate(200px);
+        ul{ 
+            padding-right: 20px;
+            padding-top: 50px;
+            text-decoration: none;
+            list-style: none;
+            text-align: right;
+            li{
+                padding-top: 30px;
+                a{
+                    text-decoration: none;
+                    color: black;  
+                    font-size: 18px;   
+                }
+            }
+        }
+    }
+    
 }
