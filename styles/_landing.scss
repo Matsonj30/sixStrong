@@ -13,13 +13,25 @@
             height: 200px;
         }
         .menu{
+            background-color: $primaryColor;
+            opacity: 50%;
+            width: 80px;
+            height: 300px;
+            padding: 0px 10px;
+            position: absolute;
+            top: 0;
+            right: 0;
+            transition: ease-in-out;
             ul{
+                padding-top: 50px;
                 text-decoration: none;
                 list-style: none;
+                
                 li{
+                    padding-top: 25px;
                     a{
                         text-decoration: none;
-                        color: $primaryColor;     
+                        color: black;     
                     }
                 }
             }
