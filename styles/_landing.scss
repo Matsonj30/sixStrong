@@ -2,21 +2,41 @@
     width: 100%;
     display: block;
     background: rgb(34,167,195);
-    background: linear-gradient(278deg, rgba(34,167,195,1) 0%, rgba(15,51,191,1) 100%);
+    background: linear-gradient(68deg, rgba(34,167,195,1) 0%, rgba(15,51,191,1) 100%);
+    
     .navBar{
         height: 200px;
         width: 100%;
+        display: block;
+        img{
+            width: 150px;
+            height: 200px;
+        }
+        .menu{
+            ul{
+                text-decoration: none;
+                list-style: none;
+                li{
+                    a{
+                        text-decoration: none;
+                        color: $primaryColor;     
+                    }
+                }
+            }
+        }
         
     }
+
+    
     .background{
         height: 40vw;
         width: 100%;
+        img{
+            height: 100%;
+            width: 100%;
+        }
        
     }
-    img{
-        height: 100%;
-        width: 100%;
-    }
-   
+    
  
 }

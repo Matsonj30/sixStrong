@@ -1,0 +1,45 @@
+.navBar{
+    input{
+        display: block;
+        position: absolute;
+        top: -5px;
+        right: -5px;
+        width: 50px;
+        height: 42px;
+        opacity: 0%;
+        z-index: 2;    
+    }
+    span{
+        display: block;
+        width: 40px;
+        height: 5px;
+        margin-bottom: 5px;
+        border-radius: 5px;
+        background-color: $primaryColor;
+        transition: 0.3s ease-in;
+        
+    }
+    span:nth-child(2){
+        transform-origin: 0% 0%;
+    }
+    span:last-child{
+        transform-origin: 0% 100%;
+        
+    }
+    input:checked ~ span{
+        transform: rotate(45deg) translate(0px, 0px);
+    }
+   
+    input:checked ~ span:nth-child(3){
+        opacity: 0;
+        transform: rotate(0deg) scale(0.2, 0.2);
+    }
+    input:checked ~ span:nth-child(4){
+        transform: rotate(-45deg) translate(-5px, 4px);
+    }
+    .burgerMenu{
+        position: absolute;
+        top: 28px;
+        right: 20px;
+    }   
+}

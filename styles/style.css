@@ -12,17 +12,71 @@ body {
   width: 100%;
   display: block;
   background: rgb(34, 167, 195);
-  background: linear-gradient(278deg, rgb(34, 167, 195) 0%, rgb(15, 51, 191) 100%);
+  background: linear-gradient(68deg, rgb(34, 167, 195) 0%, rgb(15, 51, 191) 100%);
 }
 .landing .navBar {
   height: 200px;
   width: 100%;
+  display: block;
+}
+.landing .navBar img {
+  width: 150px;
+  height: 200px;
+}
+.landing .navBar .menu ul {
+  text-decoration: none;
+  list-style: none;
+}
+.landing .navBar .menu ul li a {
+  text-decoration: none;
+  color: #FAFAFA;
 }
 .landing .background {
   height: 40vw;
   width: 100%;
 }
-.landing img {
+.landing .background img {
   height: 100%;
   width: 100%;
+}
+
+.navBar input {
+  display: block;
+  position: absolute;
+  top: -5px;
+  right: -5px;
+  width: 50px;
+  height: 42px;
+  opacity: 0%;
+  z-index: 2;
+}
+.navBar span {
+  display: block;
+  width: 40px;
+  height: 5px;
+  margin-bottom: 5px;
+  border-radius: 5px;
+  background-color: #FAFAFA;
+  transition: 0.3s ease-in;
+}
+.navBar span:nth-child(2) {
+  transform-origin: 0% 0%;
+}
+.navBar span:last-child {
+  transform-origin: 0% 100%;
+}
+.navBar input:checked ~ span {
+  transform: rotate(45deg) translate(0px, 0px);
+}
+.navBar input:checked ~ span:nth-child(3) {
+  opacity: 0;
+  transform: rotate(0deg) scale(0.2, 0.2);
+}
+.navBar input:checked ~ span:nth-child(4) {
+  transform: rotate(-45deg) translate(-5px, 4px);
+}
+.navBar .burgerMenu {
+  position: absolute;
+  top: 28px;
+  right: 20px;
 }/*# sourceMappingURL=style.css.map */
