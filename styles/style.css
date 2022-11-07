@@ -32,13 +32,16 @@ body {
   width: 100%;
 }
 
-.navBar .burgerMenu {
+.landing {
+  overflow-x: hidden;
+}
+.landing .navBar .burgerMenu {
   position: absolute;
   top: 28px;
   right: 20px;
-  z-index: 3;
+  z-index: 4;
 }
-.navBar input {
+.landing .navBar input {
   display: block;
   position: absolute;
   top: -5px;
@@ -48,7 +51,7 @@ body {
   opacity: 0%;
   z-index: 2;
 }
-.navBar span {
+.landing .navBar span {
   display: block;
   width: 40px;
   height: 5px;
@@ -57,45 +60,48 @@ body {
   background-color: #FAFAFA;
   transition: 0.3s ease-in;
 }
-.navBar span:nth-child(2) {
+.landing .navBar span:nth-child(2) {
   transform-origin: 0% 0%;
 }
-.navBar span:last-child {
+.landing .navBar span:last-child {
   transform-origin: 0% 100%;
 }
-.navBar input:checked ~ span {
+.landing .navBar input:checked ~ span {
   transform: rotate(45deg) translate(0px, 0px);
   background-color: black;
 }
-.navBar input:checked ~ span:nth-child(3) {
+.landing .navBar input:checked ~ span:nth-child(3) {
   opacity: 0;
   transform: rotate(0deg) scale(0.2, 0.2);
 }
-.navBar input:checked ~ span:nth-child(4) {
+.landing .navBar input:checked ~ span:nth-child(4) {
   transform: rotate(-45deg) translate(-5px, 4px);
 }
-.navBar #menu {
-  background-color: #FAFAFA;
-  width: 150px;
-  height: 400px;
-  padding: 0px 10px;
+.landing .navBar .hideOverFlow {
   position: absolute;
   top: 0;
   right: 0;
-  transition: transform 0.5s cubic-bezier(0.77, 0.2, 0.05, 1);
-  transform: translate(200px);
+  width: 150px;
+  height: 400px;
+  overflow-x: hidden;
 }
-.navBar #menu ul {
-  padding-right: 20px;
-  padding-top: 50px;
+.landing .navBar #menu {
+  background-color: #FAFAFA;
+  width: 150px;
+  height: 400px;
+  transition: 0.5s cubic-bezier(0.77, 0.2, 0.05, 1);
+}
+.landing .navBar #menu ul {
+  padding-right: 30px;
+  padding-top: 60px;
   text-decoration: none;
   list-style: none;
   text-align: right;
 }
-.navBar #menu ul li {
+.landing .navBar #menu ul li {
   padding-top: 30px;
 }
-.navBar #menu ul li a {
+.landing .navBar #menu ul li a {
   text-decoration: none;
   color: black;
   font-size: 18px;

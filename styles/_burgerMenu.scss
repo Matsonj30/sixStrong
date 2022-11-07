@@ -1,76 +1,81 @@
-.navBar{
-    .burgerMenu{
-        position: absolute;
-        top: 28px;
-        right: 20px;
-        z-index: 3;
-    }   
-    input{
-        display: block;
-        position: absolute;
-        top: -5px;
-        right: -5px;
-        width: 50px;
-        height: 42px;
-        opacity: 0%;
-        z-index: 2;    
-    }
-    span{
-        display: block;
-        width: 40px;
-        height: 5px;
-        margin-bottom: 5px;
-        border-radius: 5px;
-        background-color: $primaryColor;
-        transition: 0.3s ease-in;
-        
-    }
-    span:nth-child(2){
-        transform-origin: 0% 0%;
-    }
-    span:last-child{
-        transform-origin: 0% 100%;
-        
-    }
-    input:checked ~ span{
-        transform: rotate(45deg) translate(0px, 0px);
-        background-color: black;
-    }
-   
-    input:checked ~ span:nth-child(3){
-        opacity: 0;
-        transform: rotate(0deg) scale(0.2, 0.2);
-    }
-    input:checked ~ span:nth-child(4){
-        transform: rotate(-45deg) translate(-5px, 4px);
-    }
-   
-    #menu{
-        background-color: $primaryColor;
+.landing{
+    overflow-x: hidden;
+    .navBar{
+        .burgerMenu{
+            position: absolute;
+            top: 28px;
+            right: 20px;
+            z-index: 4;
+        }   
+        input{
+            display: block;
+            position: absolute;
+            top: -5px;
+            right: -5px;
+            width: 50px;
+            height: 42px;
+            opacity: 0%;
+            z-index: 2;    
+        }
+        span{
+            display: block;
+            width: 40px;
+            height: 5px;
+            margin-bottom: 5px;
+            border-radius: 5px;
+            background-color: $primaryColor;
+            transition: 0.3s ease-in;
+            
+        }
+        span:nth-child(2){
+            transform-origin: 0% 0%;
+        }
+        span:last-child{
+            transform-origin: 0% 100%;
+            
+        }
+        input:checked ~ span{
+            transform: rotate(45deg) translate(0px, 0px);
+            background-color: black;
+        }
+       
+        input:checked ~ span:nth-child(3){
+            opacity: 0;
+            transform: rotate(0deg) scale(0.2, 0.2);
+        }
+        input:checked ~ span:nth-child(4){
+            transform: rotate(-45deg) translate(-5px, 4px);
+        }
+        .hideOverFlow{
+            position: absolute;
+            top: 0;
+            right: 0;
+            width: 150px;
+            height: 400px;
+            overflow-x: hidden;
+        }
+        #menu{
+            background-color: $primaryColor;
+            width: 150px;
+            height: 400px;
+            transition: 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
 
-        width: 150px;
-        height: 400px;
-        padding: 0px 10px;
-        position: absolute;
-        top: 0;
-        right: 0;
-        transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
-        transform: translate(200px);
-        ul{ 
-            padding-right: 20px;
-            padding-top: 50px;
-            text-decoration: none;
-            list-style: none;
-            text-align: right;
-            li{
-                padding-top: 30px;
-                a{
-                    text-decoration: none;
-                    color: black;  
-                    font-size: 18px;   
+            ul{ 
+                padding-right: 30px;
+                padding-top: 60px;
+                text-decoration: none;
+                list-style: none;
+                text-align: right;
+                li{
+                    padding-top: 30px;
+                    a{
+                        text-decoration: none;
+                        color: black;  
+                        font-size: 18px;   
+                    }
                 }
             }
         }
+        
     }
-    
 }
