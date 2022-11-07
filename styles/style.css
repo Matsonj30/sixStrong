@@ -6,6 +6,13 @@
 
 body {
   background-color: #FAFAFA;
+  width: 100%;
+  overflow-x: hidden;
+  overflow-y: hidden;
+}
+
+html {
+  overflow-x: initial !important;
 }
 
 .landing {
@@ -90,6 +97,7 @@ body {
   width: 150px;
   height: 400px;
   transition: 0.5s cubic-bezier(0.77, 0.2, 0.05, 1);
+  transform: translate(200px);
 }
 .landing .navBar #menu ul {
   padding-right: 30px;

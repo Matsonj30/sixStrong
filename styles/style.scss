@@ -15,10 +15,14 @@ $primaryColor: #FAFAFA;
 
 body{
     background-color: $primaryColor;
-    
+    width:100%;
+    overflow-x:hidden;
+    overflow-y:hidden;
 }
 
-
+html {
+  overflow-x: initial !important;
+}
 
 
 @import "_landing.scss";
