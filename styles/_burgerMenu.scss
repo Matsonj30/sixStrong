@@ -1,11 +1,12 @@
 .landing{
     overflow-x: hidden;
+ 
     .navBar{
         .burgerMenu{
             position: absolute;
-            top: 28px;
-            right: 20px;
-            z-index: 4;
+        
+            right: 40px;
+            z-index: 1;
         }   
         input{
             display: block;
@@ -51,15 +52,16 @@
             top: 0;
             right: 0;
             width: 150px;
-            height: 400px;
+            height: 600px;
             overflow-x: hidden;
         }
         #menu{
             background-color: $primaryColor;
-            width: 150px;
-            height: 400px;
+            width: 100%;
+            height: 100%;
             transition: 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
             transform: translate(200px);
+            z-index: -1;
             ul{ 
                 padding-right: 30px;
                 padding-top: 60px;
@@ -68,14 +70,54 @@
                 text-align: right;
                 li{
                     padding-top: 30px;
+                    
                     a{
                         text-decoration: none;
                         color: black;  
-                        font-size: 18px;   
+                        font-size: 18px; 
+                        transition: 0.5s ease-in-out;
+                        border-right: 4px solid blue;
+                        padding: 5px 10px;
+        
                     }
+                
                 }
             }
         }
         
     }
+}
+@media(min-width:900px){
+    .landing{
+        .navBar{
+            .burgerMenu{
+                display: none;
+            }
+            .hideOverFlow{
+                z-index: 10;
+                position: relative;
+                overflow-x: visible;
+                height: 90px;
+                width: fit-content;
+            }
+            #menu{
+                transform: translateX(0);
+                background-color: transparent;
+                
+                ul{
+                    display: flex;
+                    padding: 0px 30px;
+                    li{
+                        a{
+                            border-right: none;
+                            color: $primaryColor
+                        }
+                    };
+                    
+                }
+            }
+        }
+        
+    }
+   
 }
