@@ -87,17 +87,16 @@
         
     }
 }
-@media(min-width:900px){
+@media(min-width:700px){
     .landing{
         .navBar{
             .burgerMenu{
                 display: none;
             }
             .hideOverFlow{
-                z-index: 10;
+               
                 position: relative;
                 margin-left: auto;
-                overflow-x: visible;
                 height: 90px;
                 width: 600px;
             }
