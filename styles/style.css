@@ -18,49 +18,39 @@ html {
 .landing {
   width: 100%;
   display: block;
-  background: #22a7c3;
-  background: linear-gradient(68deg, #22a7c3 0%, #0f33bf 100%);
+  background: rgb(34, 167, 195);
+  background: linear-gradient(68deg, rgb(34, 167, 195) 0%, rgb(15, 51, 191) 100%);
   height: 600px;
 }
-
 .landing .navBar {
   width: 100%;
   height: 100px;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  align-items: center;
 }
-
 .landing .navBar img {
   width: 200px;
   height: 50px;
   padding-left: 30px;
 }
-
 .landing .introduction {
-  -webkit-transform: translateY(200px);
-          transform: translateY(200px);
+  transform: translateY(200px);
   width: 550px;
   height: -webkit-fit-content;
   height: -moz-fit-content;
   height: fit-content;
   background-color: rgba(212, 161, 161, 0.389);
   z-index: 1;
+  position: relative;
 }
-
 .landing .introduction h1 {
   font-size: 50px;
   padding-bottom: 15px;
   line-height: 55px;
 }
-
 .landing .introduction p {
   font-size: 16px;
 }
-
 .landing .introduction button {
   width: 150px;
   height: 50px;
@@ -71,40 +61,27 @@ html {
   letter-spacing: 0.5px;
   border-radius: 4px;
   margin-right: 20px;
-  -webkit-transition: 0.35s ease-in-out;
   transition: 0.35s ease-in-out;
 }
-
 .landing .introduction button:hover {
-  -webkit-box-shadow: inset 150px 0 0 0 red;
-          box-shadow: inset 150px 0 0 0 red;
+  box-shadow: inset 150px 0 0 0 red;
   cursor: pointer;
 }
-
 .landing .introduction .learnMoreCallNow {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   padding-top: 20px;
-  -webkit-transition: 0.5s ease-in-out;
   transition: 0.5s ease-in-out;
 }
-
 .landing .introduction .learnMoreCallNow .callNow {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
 }
-
 .landing .introduction .learnMoreCallNow .callNow .fa {
   font-size: 50px;
   margin-right: 8px;
 }
-
 .landing .introduction .learnMoreCallNow .callNow #callNowAboveNumber {
   font-size: 16px;
 }
-
 .landing .introduction .learnMoreCallNow .callNow .details {
   padding-top: 6px;
 }
@@ -112,11 +89,9 @@ html {
 .background {
   height: 40vw;
   width: 100%;
-  -webkit-transform: translateY(-30vw);
-          transform: translateY(-30vw);
+  transform: translateY(-30vw);
   z-index: -1;
 }
-
 .background img {
   height: 100%;
   width: 100%;
@@ -125,13 +100,11 @@ html {
 .landing {
   overflow-x: hidden;
 }
-
 .landing .navBar .burgerMenu {
   position: absolute;
   right: 40px;
   z-index: 1;
 }
-
 .landing .navBar input {
   display: block;
   position: absolute;
@@ -142,7 +115,6 @@ html {
   opacity: 0%;
   z-index: 2;
 }
-
 .landing .navBar span {
   display: block;
   width: 40px;
@@ -150,37 +122,25 @@ html {
   margin-bottom: 5px;
   border-radius: 5px;
   background-color: #FAFAFA;
-  -webkit-transition: 0.3s ease-in;
   transition: 0.3s ease-in;
 }
-
 .landing .navBar span:nth-child(2) {
-  -webkit-transform-origin: 0% 0%;
-          transform-origin: 0% 0%;
+  transform-origin: 0% 0%;
 }
-
 .landing .navBar span:last-child {
-  -webkit-transform-origin: 0% 100%;
-          transform-origin: 0% 100%;
+  transform-origin: 0% 100%;
 }
-
 .landing .navBar input:checked ~ span {
-  -webkit-transform: rotate(45deg) translate(0px, 0px);
-          transform: rotate(45deg) translate(0px, 0px);
+  transform: rotate(45deg) translate(0px, 0px);
   background-color: black;
 }
-
 .landing .navBar input:checked ~ span:nth-child(3) {
   opacity: 0;
-  -webkit-transform: rotate(0deg) scale(0.2, 0.2);
-          transform: rotate(0deg) scale(0.2, 0.2);
+  transform: rotate(0deg) scale(0.2, 0.2);
 }
-
 .landing .navBar input:checked ~ span:nth-child(4) {
-  -webkit-transform: rotate(-45deg) translate(-5px, 4px);
-          transform: rotate(-45deg) translate(-5px, 4px);
+  transform: rotate(-45deg) translate(-5px, 4px);
 }
-
 .landing .navBar .hideOverFlow {
   position: absolute;
   top: 0;
@@ -189,35 +149,28 @@ html {
   height: 600px;
   overflow-x: hidden;
 }
-
-.landing .navBar #menu {
+.landing .navBar .hideOverFlow #menu {
   background-color: #FAFAFA;
   width: 100%;
   height: 100%;
-  -webkit-transition: 0.5s cubic-bezier(0.77, 0.2, 0.05, 1);
   transition: 0.5s cubic-bezier(0.77, 0.2, 0.05, 1);
-  -webkit-transform: translate(200px);
-          transform: translate(200px);
-  z-index: -1;
+  transform: translate(200px);
+  z-index: 1;
 }
-
-.landing .navBar #menu ul {
+.landing .navBar .hideOverFlow #menu ul {
   padding-right: 30px;
   padding-top: 60px;
   text-decoration: none;
   list-style: none;
   text-align: right;
 }
-
-.landing .navBar #menu ul li {
+.landing .navBar .hideOverFlow #menu ul li {
   padding-top: 30px;
 }
-
-.landing .navBar #menu ul li a {
+.landing .navBar .hideOverFlow #menu ul li a {
   text-decoration: none;
   color: black;
   font-size: 18px;
-  -webkit-transition: 0.5s ease-in-out;
   transition: 0.5s ease-in-out;
   border-right: 4px solid blue;
   padding: 5px 10px;
@@ -234,19 +187,13 @@ html {
     width: 600px;
   }
   .landing .navBar #menu {
-    -webkit-transform: translateX(0);
-            transform: translateX(0);
+    transform: translateX(0);
     background-color: transparent;
   }
   .landing .navBar #menu ul {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -ms-flex-pack: distribute;
-        justify-content: space-around;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    justify-content: space-around;
+    align-items: center;
     height: 100%;
     padding: 0px 30px;
   }
@@ -257,5 +204,4 @@ html {
     border-right: none;
     color: #FAFAFA;
   }
-}
-/*# sourceMappingURL=style.css.map */
+}/*# sourceMappingURL=style.css.map */
