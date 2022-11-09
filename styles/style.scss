@@ -2,7 +2,9 @@ $font1: "Poppins", sans-serif;
 $font2: "proxima-nova", sans-serif;
 
 $primaryColor: #FAFAFA;
-$secondaryColor: #FFFFFF;
+$secondaryColor: #1B7CC1;
+$secondaryShade--: #025b6d13;
+$secondaryShade--: #E7EEEF;
 $greycolor: rgba(129, 129, 129, 0.089);
 
 
@@ -15,6 +17,7 @@ $greycolor: rgba(129, 129, 129, 0.089);
 
 body{
     background-color: $primaryColor;
+    
     width:100%;
     overflow-x:hidden;
     
@@ -29,7 +32,23 @@ html {
   justify-content: center;
   width: 100%
 }
+.header{
+  display: flex;
+  justify-content: center;
+  h1{
+    font-size: 45px;
+  }
+  ::after{
+      display: block;
+      content: "";
+      border-bottom: 5px solid $secondaryColor;
+      transform: scaleX(0.3);
+      padding-bottom: 3px;
+      margin-bottom: 20px;
+  }
+}
 @import "_landing.scss";
 @import "_burgerMenu.scss";
 @import "_introduction.scss";
 @import "_services.scss";
+@import "_pricing.scss";

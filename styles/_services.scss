@@ -1,22 +1,9 @@
 .services{
-    position: absolute;
     top: 680px;
     width: 100%;
+    transform: translateY(-40vw);
     height: fit-content;
 
-    
-    .header{
-        display: flex;
-        justify-content: center;
-        ::after{
-            display: block;
-            content: "";
-            border-bottom: 5px solid blue;
-            transform: scaleX(0.3);
-            padding-bottom: 5px;
-            margin-bottom: 10px;
-        }
-    }
     .servicesContainer{
         height: fit-content;
         display: flex;
@@ -31,7 +18,7 @@
         width: 400px;
         height: 250px;
         background-color: $greycolor;
-      
+        background-color: $secondaryShade--;
         margin: 5px 5px;
         border-radius: 15px;
        
@@ -54,10 +41,10 @@
     button{
         width: 150px;
         height: 50px;
-        margin-top: 10px;
+        margin-top: 20px;
         background-color: transparent;
-        border: 3px solid rgb(44, 44, 214);
-        color: rgb(44, 44, 214);
+        border: 3px solid $secondaryColor;
+        color: $secondaryColor;
         border-radius: 5px;
         font-size: 16px;
         

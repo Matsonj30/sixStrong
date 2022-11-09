@@ -1,0 +1,76 @@
+.pricing{
+    transform: translateY(-38vw);
+
+    .pricingContainer{
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        padding-top: 50px;
+        max-width: 1600px;
+        .priceOption{
+            width: 300px;
+            height: 450px;
+            background-color: $secondaryColor;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            border-radius: 10px;
+            margin: 15px 15px;
+            box-shadow: 2.2px 4.3px 4.3px hsl(0deg 0% 0% / 0.43);
+            .priceBox{
+                width: 85%;
+                height: 150px;
+                margin-top: 20px;
+                margin-bottom: 20px;
+                background-color: $primaryColor;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                border-radius: 15px;
+                color: $secondaryColor;
+
+                box-shadow: 1.1px 2.2px 2.2px hsl(0deg 0% 0% / 0.47);
+               
+
+                p{
+                    font-size: 17px;
+                    font-weight: 600;
+                    padding-top: 8px;
+                }
+                h3{
+                    font-size: 45px;
+                    padding-top: 6px;
+                   
+                }
+                h3:first-letter{
+                    font-weight: 100;
+                }
+                
+            }
+            .priceFeatures{
+                color: $primaryColor;
+
+                ul{
+                    list-style: none;
+                    padding-bottom: 25px;
+                    li{
+                        padding-bottom: 12px;
+                        font-size: 18px;
+                    }
+                }
+            }
+            button{
+                width: 150px;
+                height: 45px;
+                background-color: $primaryColor;
+                border: none;
+                border-radius: 25px;
+                color: $secondaryColor;
+                font-size: 16px;
+                letter-spacing: 1.1px;
+               // box-shadow: 1.1px 2.2px 2.2px hsl(0deg 0% 0% / 0.47);
+                box-shadow: 4px 4px 0px 0 rgb(0 0 0 / 10%);
+            }
+        }
+    }
+}
