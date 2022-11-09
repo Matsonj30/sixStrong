@@ -3,7 +3,7 @@ $font2: "proxima-nova", sans-serif;
 
 $primaryColor: #FAFAFA;
 $secondaryColor: #FFFFFF;
-
+$greycolor: rgba(129, 129, 129, 0.089);
 
 
 *{
@@ -17,13 +17,19 @@ body{
     background-color: $primaryColor;
     width:100%;
     overflow-x:hidden;
-    overflow-y:hidden;
+    
 }
 
 html {
   overflow-x: initial !important;
 }
 
-
+.wrapper{
+  display: flex;
+  justify-content: center;
+  width: 100%
+}
 @import "_landing.scss";
 @import "_burgerMenu.scss";
+@import "_introduction.scss";
+@import "_services.scss";

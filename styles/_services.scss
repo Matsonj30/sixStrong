@@ -1,0 +1,65 @@
+.services{
+    position: absolute;
+    top: 680px;
+    width: 100%;
+    height: fit-content;
+
+    
+    .header{
+        display: flex;
+        justify-content: center;
+        ::after{
+            display: block;
+            content: "";
+            border-bottom: 5px solid blue;
+            transform: scaleX(0.3);
+            padding-bottom: 5px;
+            margin-bottom: 10px;
+        }
+    }
+    .servicesContainer{
+        height: fit-content;
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        max-width: 1401px;
+    }
+    .service{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 400px;
+        height: 250px;
+        background-color: $greycolor;
+      
+        margin: 5px 5px;
+        border-radius: 15px;
+       
+        .fa{
+            font-size: 60px;
+            padding-top: 50px;
+            padding-bottom: 10px;
+            color: rgba(30, 175, 71, 0.475);
+        }
+        h3{
+            font-size: 20px;
+            font-weight: 600;
+
+           
+        }
+        p{
+            font-size: 15px;
+        }
+    }
+    button{
+        width: 150px;
+        height: 50px;
+        margin-top: 10px;
+        background-color: transparent;
+        border: 3px solid rgb(44, 44, 214);
+        color: rgb(44, 44, 214);
+        border-radius: 5px;
+        font-size: 16px;
+        
+    }
+}

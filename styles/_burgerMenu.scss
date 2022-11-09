@@ -1,6 +1,4 @@
 .landing{
-    overflow-x: hidden;
- 
     .navBar{
         .burgerMenu{
             position: absolute;
@@ -89,39 +87,42 @@
         
     }
 }
-@media(min-width:700px){
+@media(min-width:800px){
     .landing{
         .navBar{
             .burgerMenu{
                 display: none;
             }
             .hideOverFlow{
-               
+               overflow: visible;
                 position: relative;
                 margin-left: auto;
+                padding-right: 400px;
                 height: 90px;
                 width: 600px;
-            }
-            #menu{
-                transform: translateX(0);
-                background-color: transparent;
-                ul{
-                    display: flex;
-                    justify-content: space-around;
-                    align-items: center;
-                    height: 100%;
-                    padding: 0px 30px;
-                   
-                    li{
-                        padding-top: 0px;
-                        a{
-                            border-right: none;
-                            color: $primaryColor
-                        }
-                    };
-                    
+
+                #menu{
+                    transform: translateX(0);
+                    background-color: transparent;
+                    ul{
+                        display: flex;
+                        justify-content: space-around;
+                        align-items: center;
+                        height: 100%;
+                        padding: 0px 30px;
+                       
+                        li{
+                            padding-top: 0px;
+                            a{
+                                border-right: none;
+                                color: $primaryColor
+                            }
+                        };
+                        
+                    }
                 }
             }
+           
         }
         
     }
