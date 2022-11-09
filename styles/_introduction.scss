@@ -1,0 +1,67 @@
+.introduction{
+    width: 550px;
+    height: fit-content;
+    color: $primaryColor;
+    z-index: 1;
+    position: relative;
+    padding-left: 50px;
+    padding-top: 30px;
+    h1{
+        font-size: 45px;
+        padding-bottom: 15px;
+      
+    
+    }
+    p{
+        font-size: 16px;
+        
+    }
+    button{
+        width: 150px;
+        height: 50px;
+        background-color: $primaryColor;
+        border: 0px;
+        font-size: 20px;
+        font-weight: 600;
+        letter-spacing: 0.5px;
+
+        border-radius: 4px;
+        margin-right: 20px;
+        transition: 0.35s ease-in-out;
+    }
+    button:hover{
+        box-shadow: inset 150px 0 0 0 red;
+        cursor: pointer;
+    }
+    .learnMoreCallNow{
+        display: flex;
+        padding-top: 20px;
+        transition: 0.5s ease-in-out;
+        .callNow{
+            display: flex;
+            
+            .fa{
+                font-size: 50px;
+                margin-right: 8px;
+            }
+            #callNowAboveNumber{
+                font-size: 16px;
+                
+            }
+            .details{
+                padding-top: 0px;
+            }
+            
+        }
+    }
+}
+
+.drone{
+    transform: translate(1000px, -300px);
+    img{
+       
+        border-radius: 50%;
+        width: 300px;
+        height: auto;
+    }
+}

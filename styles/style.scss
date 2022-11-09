@@ -17,7 +17,7 @@ body{
     background-color: $primaryColor;
     width:100%;
     overflow-x:hidden;
-    overflow-y:hidden;
+    
 }
 
 html {
@@ -27,3 +27,5 @@ html {
 
 @import "_landing.scss";
 @import "_burgerMenu.scss";
+@import "_introduction.scss";
+@import "_services.scss";

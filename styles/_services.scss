@@ -1,0 +1,25 @@
+.services{
+    position: absolute;
+    top: 700px;
+    width: 100%;
+    height: fit-content;
+
+    
+    .header{
+        display: flex;
+        justify-content: center;
+    }
+    .servicesContainer{
+        height: fit-content;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    .service{
+        width: 450px;
+        height: 350px;
+        background-color: rgba(129, 129, 129, 0.247);
+        margin-top: 10px;
+    }
+    
+}
