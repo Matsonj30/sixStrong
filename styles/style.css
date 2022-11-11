@@ -6,8 +6,12 @@
 
 body {
   background-color: #FAFAFA;
+  color: rgb(48, 47, 47);
   width: 100%;
   overflow-x: hidden;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
 }
 
 html {
@@ -41,7 +45,7 @@ html {
   display: block;
   background: rgb(34, 167, 195);
   background: linear-gradient(260deg, rgb(34, 167, 195) 0%, rgb(15, 51, 191) 100%);
-  height: 700px;
+  height: 699px;
 }
 .landing .navBar {
   width: 100%;
@@ -56,10 +60,11 @@ html {
 }
 
 .background {
-  height: 40vw;
+  position: absolute;
+  top: 400px;
+  height: 300px;
   width: 100%;
-  transform: translateY(-30vw);
-  z-index: -1;
+  z-index: 1;
 }
 .background img {
   height: 100%;
@@ -236,12 +241,12 @@ html {
 }
 
 .services {
-  top: 680px;
   width: 100%;
-  transform: translateY(-40vw);
   height: -webkit-fit-content;
   height: -moz-fit-content;
   height: fit-content;
+  z-index: 2;
+  padding-bottom: 100px;
 }
 .services .servicesContainer {
   height: -webkit-fit-content;
@@ -259,7 +264,7 @@ html {
   width: 400px;
   height: 250px;
   background-color: rgba(129, 129, 129, 0.089);
-  background-color: #E7EEEF;
+  background-color: #dee3e4;
   margin: 5px 5px;
   border-radius: 15px;
 }
@@ -288,70 +293,86 @@ html {
 }
 
 .pricing {
-  transform: translateY(-38vw);
+  padding-bottom: 50px;
 }
 .pricing .pricingContainer {
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-  padding-top: 50px;
-  max-width: 1600px;
+  max-width: 1400px;
+  position: relative;
 }
 .pricing .pricingContainer .priceOption {
-  width: 300px;
+  width: 350px;
   height: 450px;
-  background-color: #1B7CC1;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  border-radius: 10px;
-  margin: 15px 15px;
-  box-shadow: 2.2px 4.3px 4.3px hsla(0deg, 0%, 0%, 0.43);
-}
-.pricing .pricingContainer .priceOption .priceBox {
-  width: 85%;
-  height: 150px;
-  margin-top: 20px;
-  margin-bottom: 20px;
   background-color: #FAFAFA;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  border-radius: 15px;
-  color: #1B7CC1;
-  box-shadow: 1.1px 2.2px 2.2px hsla(0deg, 0%, 0%, 0.47);
+  border: 3px solid #1B7CC1;
+  border-radius: 10px;
 }
-.pricing .pricingContainer .priceOption .priceBox p {
-  font-size: 17px;
-  font-weight: 600;
-  padding-top: 8px;
-}
-.pricing .pricingContainer .priceOption .priceBox h3 {
-  font-size: 45px;
-  padding-top: 6px;
-}
-.pricing .pricingContainer .priceOption .priceBox h3:first-letter {
-  font-weight: 100;
-}
-.pricing .pricingContainer .priceOption .priceFeatures {
+.pricing .pricingContainer .priceOption .topCheck {
+  position: absolute;
+  top: 12px;
+  left: 10px;
+  font-size: 20px;
   color: #FAFAFA;
 }
+.pricing .pricingContainer .priceOption .priceBox {
+  transform: translateY(-40px);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.pricing .pricingContainer .priceOption .priceBox h3 {
+  font-size: 50px;
+  font-weight: 100;
+}
+.pricing .pricingContainer .priceOption .priceBox p {
+  color: #1B7CC1;
+  font-weight: 600;
+}
+.pricing .pricingContainer .priceOption .priceBox .addBorder {
+  position: relative;
+  width: 250px;
+  height: 20px;
+  border: 1px solid #dee3e4;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 300px;
+  z-index: 1;
+  background-color: #FAFAFA;
+}
+.pricing .pricingContainer .priceOption .priceBox .line {
+  position: relative;
+  width: 325px;
+  height: 1px;
+  border-top: 1px solid #dee3e4;
+  z-index: 0;
+  transform: translateY(-11px);
+}
 .pricing .pricingContainer .priceOption .priceFeatures ul {
-  list-style: none;
-  padding-bottom: 25px;
+  padding: 20px 20px;
 }
 .pricing .pricingContainer .priceOption .priceFeatures ul li {
-  padding-bottom: 12px;
-  font-size: 18px;
+  display: flex;
+  padding-top: 15px;
 }
-.pricing .pricingContainer .priceOption button {
-  width: 150px;
-  height: 45px;
-  background-color: #FAFAFA;
-  border: none;
-  border-radius: 25px;
+.pricing .pricingContainer .priceOption .priceFeatures ul li .fa {
+  position: relative;
   color: #1B7CC1;
-  font-size: 16px;
-  letter-spacing: 1.1px;
-  box-shadow: 4px 4px 0px 0 rgba(0, 0, 0, 0.1);
+  font-size: 20px;
+  padding-right: 7px;
+  transform: translateY(3px);
+}
+.pricing .pricingContainer .priceOption::before {
+  width: 0;
+  height: 0;
+  display: block;
+  content: "";
+  border-style: solid;
+  border-width: 64px 64px 0px 0px;
+  border-color: #1B7CC1 transparent;
+}
+
+footer {
+  width: 100%;
+  height: 300px;
+  background-color: #1B7CC1;
 }/*# sourceMappingURL=style.css.map */

@@ -1,76 +1,86 @@
 .pricing{
-    transform: translateY(-38vw);
-
+    padding-bottom: 50px;
     .pricingContainer{
-        display: flex;
-        justify-content: center;
-        flex-wrap: wrap;
-        padding-top: 50px;
-        max-width: 1600px;
+        max-width: 1400px;
+        position: relative;
         .priceOption{
-            width: 300px;
+            width: 350px;
             height: 450px;
-            background-color: $secondaryColor;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
+            background-color: $primaryColor;
+            border: 3px solid $secondaryColor;
             border-radius: 10px;
-            margin: 15px 15px;
-            box-shadow: 2.2px 4.3px 4.3px hsl(0deg 0% 0% / 0.43);
+            
+            .topCheck{
+                position: absolute;
+                top: 12px;
+                left: 10px;
+                font-size: 20px;
+                color: $primaryColor;
+            }
             .priceBox{
-                width: 85%;
-                height: 150px;
-                margin-top: 20px;
-                margin-bottom: 20px;
-                background-color: $primaryColor;
+                transform: translateY(-40px);
                 display: flex;
                 flex-direction: column;
                 align-items: center;
-                border-radius: 15px;
-                color: $secondaryColor;
-
-                box-shadow: 1.1px 2.2px 2.2px hsl(0deg 0% 0% / 0.47);
-               
-
-                p{
-                    font-size: 17px;
-                    font-weight: 600;
-                    padding-top: 8px;
-                }
-                h3{
-                    font-size: 45px;
-                    padding-top: 6px;
-                   
-                }
-                h3:first-letter{
-                    font-weight: 100;
-                }
                 
+                h3{
+                    font-size: 50px;
+                    font-weight: 100;
+                    
+                }
+                p{
+                    color: $secondaryColor;
+                    font-weight: 600;
+                }
+                .addBorder{
+                    position: relative;
+                    width: 250px;
+                    height: 20px;
+                    border: 1px solid $secondaryShade--;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    border-radius: 300px;
+                    z-index: 1;
+                    background-color: $primaryColor;
+                }
+                .line{
+                    position: relative;
+                    width: 325px;
+                    height: 1px;
+                    border-top: 1px solid $secondaryShade--;
+                    z-index: 0;
+                    transform: translateY(-11px);
+                }
             }
             .priceFeatures{
-                color: $primaryColor;
-
                 ul{
-                    list-style: none;
-                    padding-bottom: 25px;
+                    padding: 20px 20px;
+
                     li{
-                        padding-bottom: 12px;
-                        font-size: 18px;
+                        display: flex;
+                        padding-top: 15px;
+                        .fa{    
+                            position: relative;
+                            color: $secondaryColor;
+                            font-size: 20px;
+                            padding-right: 7px;
+                            transform: translateY(3px);
+                        }
                     }
                 }
             }
-            button{
-                width: 150px;
-                height: 45px;
-                background-color: $primaryColor;
-                border: none;
-                border-radius: 25px;
-                color: $secondaryColor;
-                font-size: 16px;
-                letter-spacing: 1.1px;
-               // box-shadow: 1.1px 2.2px 2.2px hsl(0deg 0% 0% / 0.47);
-                box-shadow: 4px 4px 0px 0 rgb(0 0 0 / 10%);
-            }
+           
+        }
+        .priceOption::before{
+            width: 0;
+            height: 0;
+            display: block;
+            content: "";
+            border-style: solid;
+            border-width: 64px 64px 0px 0px;
+            border-color: $secondaryColor transparent;
+           
         }
     }
 }

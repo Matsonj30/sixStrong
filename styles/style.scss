@@ -5,6 +5,7 @@ $primaryColor: #FAFAFA;
 $secondaryColor: #1B7CC1;
 $secondaryShade--: #025b6d13;
 $secondaryShade--: #E7EEEF;
+$secondaryShade--: #dee3e4; //temp
 $greycolor: rgba(129, 129, 129, 0.089);
 
 
@@ -17,9 +18,10 @@ $greycolor: rgba(129, 129, 129, 0.089);
 
 body{
     background-color: $primaryColor;
-    
+    color: rgb(48, 47, 47);
     width:100%;
     overflow-x:hidden;
+    height: fit-content;
     
 }
 
@@ -52,3 +54,4 @@ html {
 @import "_introduction.scss";
 @import "_services.scss";
 @import "_pricing.scss";
+@import "_footer.scss"

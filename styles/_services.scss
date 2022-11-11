@@ -1,9 +1,9 @@
 .services{
-    top: 680px;
-    width: 100%;
-    transform: translateY(-40vw);
-    height: fit-content;
 
+    width: 100%;
+    height: fit-content;
+    z-index: 2;
+    padding-bottom: 100px;
     .servicesContainer{
         height: fit-content;
         display: flex;
