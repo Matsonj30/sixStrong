@@ -4,7 +4,7 @@
             position: absolute;
         
             right: 40px;
-            z-index: 1;
+            z-index: 4;
         }   
         input{
             display: block;
@@ -24,7 +24,7 @@
             border-radius: 5px;
             background-color: $primaryColor;
             transition: 0.3s ease-in;
-            
+         
         }
         span:nth-child(2){
             transform-origin: 0% 0%;
@@ -52,14 +52,14 @@
             width: 150px;
             height: 600px;
             overflow-x: hidden;
-
+            z-index: 3;
             #menu{
                 background-color: $primaryColor;
                 width: 100%;
                 height: 100%;
                 transition: 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
                 transform: translate(200px);
-                z-index: 1;
+               
                 ul{ 
                     padding-right: 30px;
                     padding-top: 60px;
@@ -72,11 +72,12 @@
                         a{
                             text-decoration: none;
                             color: black;  
-                            font-size: 18px; 
+                            font-size: 15px; 
                             transition: 0.5s ease-in-out;
-                            border-right: 4px solid blue;
+                            border-right: 4px solid $secondaryColor;
                             padding: 5px 10px;
-            
+                            font-weight: 600;
+                            letter-spacing: 1px;
                         }
                     
                     }
@@ -87,7 +88,7 @@
         
     }
 }
-@media(min-width:800px){
+@media(min-width:850px){
     .landing{
         .navBar{
             .burgerMenu{
@@ -96,14 +97,14 @@
             .hideOverFlow{
                overflow: visible;
                 position: relative;
-                margin-left: auto;
-                padding-right: 400px;
                 height: 90px;
                 width: 600px;
-
+                padding-left: 15px;
+                
                 #menu{
                     transform: translateX(0);
                     background-color: transparent;
+                    z-index: 3;
                     ul{
                         display: flex;
                         justify-content: space-around;

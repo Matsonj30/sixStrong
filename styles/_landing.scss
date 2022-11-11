@@ -10,11 +10,11 @@
         height: 100px;
         display: flex;
         align-items: center;
-     
+        
         img{
             width: 400px;
             height: 100px;
-            padding-left: 50px;
+            padding-left:25vw;
             
         }
       
@@ -39,4 +39,23 @@
        
     }
    
+}
+@media(max-width:1200px){
+    .landing{
+        .navBar{
+            img{
+                padding-left: 10vw;
+            }
+        }
+    }
+}
+@media(max-width:910px){
+    .landing{
+        .navBar{
+            img{
+                width: 300px;
+                height: 75px;
+            }
+        }
+    }
 }

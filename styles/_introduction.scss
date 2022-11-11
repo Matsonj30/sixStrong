@@ -2,14 +2,14 @@
     width: 550px;
     height: fit-content;
     color: $primaryColor;
-    z-index: 1;
+    z-index: 2;
     position: relative;
-    padding-left: 50px;
-    padding-top: 30px;
+    padding-left: 25vw;
+    padding-top: 70px;
     h1{
         font-size: 45px;
         padding-bottom: 15px;
-      
+        font-size: bold;
     
     }
     p{
@@ -63,5 +63,17 @@
         border-radius: 50%;
         width: 300px;
         height: auto;
+    }
+}
+@media(max-width:1200px){
+    .introduction{
+        padding-left: 10vw;
+    }
+}
+@media(max-width:910px){
+    .introduction{
+       h1{
+        font-size: 35px;
+       }
     }
 }
