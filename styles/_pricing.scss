@@ -1,24 +1,31 @@
 .pricing{
     padding-bottom: 50px;
     .pricingContainer{
-        max-width: 1400px;
-        position: relative;
+        max-width: 1100px;
+       
+
+        .popular{
+            border: 4px solid $secondaryColor;
+            position: relative;
+        }
+        .other{
+            border: 4px solid $secondaryShade--;
+        }
         .priceOption{
             width: 350px;
             height: 450px;
             background-color: $primaryColor;
-            border: 3px solid $secondaryColor;
             border-radius: 10px;
-            
+            margin: 15px 15px;
             .topCheck{
                 position: absolute;
-                top: 12px;
-                left: 10px;
+                top: 10px;
+                left: 8px;
                 font-size: 20px;
                 color: $primaryColor;
             }
             .priceBox{
-                transform: translateY(-40px);
+                
                 display: flex;
                 flex-direction: column;
                 align-items: center;
@@ -29,14 +36,18 @@
                     
                 }
                 p{
-                    color: $secondaryColor;
+                   
                     font-weight: 600;
+                    transform: translateY(-6px);
+                    padding-bottom: 11px;
                 }
                 .addBorder{
                     position: relative;
-                    width: 250px;
+                    width: fit-content;
                     height: 20px;
+                    padding: 0px 15px;
                     border: 1px solid $secondaryShade--;
+                    color: $secondaryColor;
                     display: flex;
                     justify-content: center;
                     align-items: center;
@@ -46,11 +57,11 @@
                 }
                 .line{
                     position: relative;
-                    width: 325px;
+                    width: 290px;
                     height: 1px;
                     border-top: 1px solid $secondaryShade--;
                     z-index: 0;
-                    transform: translateY(-11px);
+                    transform: translateY(-16px);
                 }
             }
             .priceFeatures{
@@ -60,21 +71,26 @@
                     li{
                         display: flex;
                         padding-top: 15px;
+                        padding-left: 9px;
+                        font-size: 18px;
                         .fa{    
                             position: relative;
                             color: $secondaryColor;
                             font-size: 20px;
                             padding-right: 7px;
-                            transform: translateY(3px);
+                            transform: translateY(4px);
                         }
                     }
                 }
             }
            
         }
-        .priceOption::before{
+        .popular::before{
             width: 0;
             height: 0;
+            position: absolute;
+            top: 1;
+            left: 1;
             display: block;
             content: "";
             border-style: solid;
@@ -82,5 +98,11 @@
             border-color: $secondaryColor transparent;
            
         }
+    }
+}
+@media(min-width: 650px){
+    .pricingContainer{
+        display: flex;
+        flex-wrap: wrap;
     }
 }
