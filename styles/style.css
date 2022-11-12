@@ -211,7 +211,6 @@ html {
     height: 90px;
     width: 600px;
     padding-left: 15px;
-    overflow: auto;
   }
   .landing .navBar .hideOverFlow #menu {
     -webkit-transform: translateX(0);
