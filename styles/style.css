@@ -242,6 +242,9 @@ html {
     -webkit-transition: 0.5s ease-in-out;
     transition: 0.5s ease-in-out;
   }
+  .landing .navBar .hideOverFlow #menu ul li a:hover {
+    border-right: none;
+  }
   .landing .navBar .hideOverFlow #menu ul li a:after {
     display: block;
     content: "";

@@ -124,14 +124,16 @@
                                 font-size: 15px;
                                 transition: 0.5s ease-in-out;
                             }
-
+                            a:hover{
+                                border-right: none;
+                            }
                             a:after{
                                 display: block;
                                 content: "";
                                 border-bottom: 2px solid $primaryColor;
                                 transform: scaleX(0);
                                 transition: 250ms ease-in-out;
-                                
+                              
                             }
                             a:hover::after{
                                 transform: scaleX(1);
