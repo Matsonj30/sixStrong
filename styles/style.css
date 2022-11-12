@@ -355,6 +355,12 @@ html {
   }
 }
 
+@media (max-width: 650px) {
+  .introduction {
+    width: 320px;
+  }
+}
+
 .services {
   width: 100%;
   height: -webkit-fit-content;
