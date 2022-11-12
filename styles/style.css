@@ -6,7 +6,7 @@
 
 body {
   background-color: #FAFAFA;
-  color: rgb(48, 47, 47);
+  color: #302f2f;
   width: 100%;
   overflow-x: hidden;
   height: -webkit-fit-content;
@@ -19,23 +19,34 @@ html {
 }
 
 .wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   width: 100%;
 }
 
 .header {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
+
 .header h1 {
   font-size: 45px;
 }
+
 .header ::after {
   display: block;
   content: "";
   border-bottom: 5px solid #1B7CC1;
-  transform: scaleX(0.3);
+  -webkit-transform: scaleX(0.3);
+          transform: scaleX(0.3);
   padding-bottom: 3px;
   margin-bottom: 20px;
 }
@@ -43,16 +54,22 @@ html {
 .landing {
   width: 100%;
   display: block;
-  background: rgb(34, 167, 195);
-  background: linear-gradient(260deg, rgb(34, 167, 195) 0%, rgb(15, 51, 191) 100%);
+  background: #22a7c3;
+  background: linear-gradient(260deg, #22a7c3 0%, #0f33bf 100%);
   height: 699px;
 }
+
 .landing .navBar {
   width: 100%;
   height: 100px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
+
 .landing .navBar img {
   width: 400px;
   height: 100px;
@@ -66,6 +83,7 @@ html {
   width: 100%;
   z-index: 1;
 }
+
 .background img {
   height: 100%;
   width: 100%;
@@ -76,17 +94,20 @@ html {
     padding-left: 10vw;
   }
 }
+
 @media (max-width: 910px) {
   .landing .navBar img {
     width: 300px;
     height: 75px;
   }
 }
+
 .landing .navBar .burgerMenu {
   position: absolute;
   right: 40px;
   z-index: 4;
 }
+
 .landing .navBar input {
   display: block;
   position: absolute;
@@ -97,6 +118,7 @@ html {
   opacity: 0%;
   z-index: 2;
 }
+
 .landing .navBar span {
   display: block;
   width: 40px;
@@ -104,60 +126,80 @@ html {
   margin-bottom: 5px;
   border-radius: 5px;
   background-color: #FAFAFA;
+  -webkit-transition: 0.3s ease-in;
   transition: 0.3s ease-in;
 }
+
 .landing .navBar span:nth-child(2) {
-  transform-origin: 0% 0%;
+  -webkit-transform-origin: 0% 0%;
+          transform-origin: 0% 0%;
 }
+
 .landing .navBar span:last-child {
-  transform-origin: 0% 100%;
+  -webkit-transform-origin: 0% 100%;
+          transform-origin: 0% 100%;
 }
+
 .landing .navBar input:checked ~ span {
-  transform: rotate(45deg) translate(0px, 0px);
+  -webkit-transform: rotate(45deg) translate(0px, 0px);
+          transform: rotate(45deg) translate(0px, 0px);
   background-color: black;
 }
+
 .landing .navBar input:checked ~ span:nth-child(3) {
   opacity: 0;
-  transform: rotate(0deg) scale(0.2, 0.2);
+  -webkit-transform: rotate(0deg) scale(0.2, 0.2);
+          transform: rotate(0deg) scale(0.2, 0.2);
 }
+
 .landing .navBar input:checked ~ span:nth-child(4) {
-  transform: rotate(-45deg) translate(-5px, 4px);
+  -webkit-transform: rotate(-45deg) translate(-5px, 4px);
+          transform: rotate(-45deg) translate(-5px, 4px);
 }
+
 .landing .navBar .hideOverFlow {
   position: absolute;
   top: 0;
   right: 0;
-  width: 150px;
+  width: 175px;
   height: 600px;
   overflow-x: hidden;
   z-index: 3;
 }
+
 .landing .navBar .hideOverFlow #menu {
   background-color: #FAFAFA;
   width: 100%;
   height: 100%;
+  -webkit-transition: 0.5s cubic-bezier(0.77, 0.2, 0.05, 1);
   transition: 0.5s cubic-bezier(0.77, 0.2, 0.05, 1);
-  transform: translate(200px);
+  -webkit-transform: translate(200px);
+          transform: translate(200px);
 }
+
 .landing .navBar .hideOverFlow #menu ul {
   padding-right: 30px;
-  padding-top: 60px;
+  padding-top: 100px;
   text-decoration: none;
   list-style: none;
   text-align: right;
 }
+
 .landing .navBar .hideOverFlow #menu ul li {
-  padding-top: 30px;
+  padding: 20px 5px;
 }
+
 .landing .navBar .hideOverFlow #menu ul li a {
   text-decoration: none;
   color: black;
-  font-size: 15px;
-  transition: 0.5s ease-in-out;
-  border-right: 4px solid #1B7CC1;
-  padding: 5px 10px;
+  font-size: 20px;
+  padding-right: 8px;
   font-weight: 600;
   letter-spacing: 1px;
+}
+
+.landing .navBar .hideOverFlow #menu ul li a:hover {
+  border-right: 4px solid #1B7CC1;
 }
 
 @media (min-width: 850px) {
@@ -165,32 +207,59 @@ html {
     display: none;
   }
   .landing .navBar .hideOverFlow {
-    overflow: visible;
     position: relative;
     height: 90px;
     width: 600px;
     padding-left: 15px;
+    overflow: auto;
   }
   .landing .navBar .hideOverFlow #menu {
-    transform: translateX(0);
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
     background-color: transparent;
     z-index: 3;
   }
   .landing .navBar .hideOverFlow #menu ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: space-around;
-    align-items: center;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
     height: 100%;
-    padding: 0px 30px;
+    padding: 0px 0px;
   }
   .landing .navBar .hideOverFlow #menu ul li {
-    padding-top: 0px;
+    padding: 0;
+    -webkit-transform: translateY(14px);
+            transform: translateY(14px);
   }
   .landing .navBar .hideOverFlow #menu ul li a {
     border-right: none;
     color: #FAFAFA;
+    font-size: 15px;
+    -webkit-transition: 0.5s ease-in-out;
+    transition: 0.5s ease-in-out;
+  }
+  .landing .navBar .hideOverFlow #menu ul li a:after {
+    display: block;
+    content: "";
+    border-bottom: 2px solid #FAFAFA;
+    -webkit-transform: scaleX(0);
+            transform: scaleX(0);
+    -webkit-transition: 250ms ease-in-out;
+    transition: 250ms ease-in-out;
+  }
+  .landing .navBar .hideOverFlow #menu ul li a:hover::after {
+    -webkit-transform: scaleX(1);
+            transform: scaleX(1);
+    -webkit-transform-origin: 50% 100%;
+            transform-origin: 50% 100%;
   }
 }
+
 .introduction {
   width: 550px;
   height: -webkit-fit-content;
@@ -202,14 +271,17 @@ html {
   padding-left: 25vw;
   padding-top: 70px;
 }
+
 .introduction h1 {
   font-size: 45px;
   padding-bottom: 15px;
   font-size: bold;
 }
+
 .introduction p {
   font-size: 16px;
 }
+
 .introduction button {
   width: 150px;
   height: 50px;
@@ -220,34 +292,49 @@ html {
   letter-spacing: 0.5px;
   border-radius: 4px;
   margin-right: 20px;
+  -webkit-transition: 0.35s ease-in-out;
   transition: 0.35s ease-in-out;
 }
+
 .introduction button:hover {
-  box-shadow: inset 150px 0 0 0 red;
+  -webkit-box-shadow: inset 150px 0 0 0 red;
+          box-shadow: inset 150px 0 0 0 red;
   cursor: pointer;
 }
+
 .introduction .learnMoreCallNow {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   padding-top: 20px;
+  -webkit-transition: 0.5s ease-in-out;
   transition: 0.5s ease-in-out;
 }
+
 .introduction .learnMoreCallNow .callNow {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
 }
+
 .introduction .learnMoreCallNow .callNow .fa {
   font-size: 50px;
   margin-right: 8px;
 }
+
 .introduction .learnMoreCallNow .callNow #callNowAboveNumber {
   font-size: 16px;
 }
+
 .introduction .learnMoreCallNow .callNow .details {
   padding-top: 0px;
 }
 
 .drone {
-  transform: translate(1000px, -300px);
+  -webkit-transform: translate(1000px, -300px);
+          transform: translate(1000px, -300px);
 }
+
 .drone img {
   border-radius: 50%;
   width: 300px;
@@ -259,11 +346,13 @@ html {
     padding-left: 10vw;
   }
 }
+
 @media (max-width: 910px) {
   .introduction h1 {
     font-size: 35px;
   }
 }
+
 .services {
   width: 100%;
   height: -webkit-fit-content;
@@ -272,19 +361,33 @@ html {
   z-index: 2;
   padding-bottom: 100px;
 }
+
 .services .servicesContainer {
   height: -webkit-fit-content;
   height: -moz-fit-content;
   height: fit-content;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   max-width: 1401px;
 }
+
 .services .service {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   width: 400px;
   height: 250px;
   background-color: rgba(129, 129, 129, 0.089);
@@ -292,6 +395,7 @@ html {
   margin: 5px 5px;
   border-radius: 15px;
 }
+
 .services .service .fa {
   font-size: 60px;
   padding-top: 50px;
@@ -299,13 +403,16 @@ html {
   color: rgba(30, 175, 71, 0.475);
   color: #1B7CC1;
 }
+
 .services .service h3 {
   font-size: 20px;
   font-weight: 600;
 }
+
 .services .service p {
   font-size: 15px;
 }
+
 .services button {
   width: 150px;
   height: 50px;
@@ -320,16 +427,20 @@ html {
 .pricing {
   padding-bottom: 50px;
 }
+
 .pricing .pricingContainer {
   max-width: 1300px;
 }
+
 .pricing .pricingContainer .popular {
   border: 4px solid #1B7CC1;
   position: relative;
 }
+
 .pricing .pricingContainer .other {
   border: 4px solid #dee3e4;
 }
+
 .pricing .pricingContainer .priceOption {
   width: 350px;
   height: 450px;
@@ -337,6 +448,7 @@ html {
   border-radius: 10px;
   margin: 15px 15px;
 }
+
 .pricing .pricingContainer .priceOption .topCheck {
   position: absolute;
   top: 10px;
@@ -344,20 +456,32 @@ html {
   font-size: 20px;
   color: #FAFAFA;
 }
+
 .pricing .pricingContainer .priceOption .priceBox {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
+
 .pricing .pricingContainer .priceOption .priceBox h3 {
   font-size: 50px;
   font-weight: 100;
 }
+
 .pricing .pricingContainer .priceOption .priceBox p {
   font-weight: 600;
-  transform: translateY(-6px);
+  -webkit-transform: translateY(-6px);
+          transform: translateY(-6px);
   padding-bottom: 11px;
 }
+
 .pricing .pricingContainer .priceOption .priceBox .addBorder {
   position: relative;
   width: -webkit-fit-content;
@@ -367,37 +491,52 @@ html {
   padding: 0px 15px;
   border: 1px solid #dee3e4;
   color: #1B7CC1;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
-  align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   border-radius: 300px;
   z-index: 1;
   background-color: #FAFAFA;
 }
+
 .pricing .pricingContainer .priceOption .priceBox .line {
   position: relative;
   width: 290px;
   height: 1px;
   border-top: 1px solid #dee3e4;
   z-index: 0;
-  transform: translateY(-16px);
+  -webkit-transform: translateY(-16px);
+          transform: translateY(-16px);
 }
+
 .pricing .pricingContainer .priceOption .priceFeatures ul {
   padding: 20px 20px;
 }
+
 .pricing .pricingContainer .priceOption .priceFeatures ul li {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
   padding-top: 15px;
   padding-left: 9px;
   font-size: 18px;
 }
+
 .pricing .pricingContainer .priceOption .priceFeatures ul li .fa {
   position: relative;
   color: #1B7CC1;
   font-size: 20px;
   padding-right: 7px;
-  transform: translateY(4px);
+  -webkit-transform: translateY(4px);
+          transform: translateY(4px);
 }
+
 .pricing .pricingContainer .popular::before {
   width: 0;
   height: 0;
@@ -413,13 +552,20 @@ html {
 
 @media (min-width: 650px) {
   .pricingContainer {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
   }
 }
+
 footer {
   width: 100%;
   height: 300px;
   background-color: #1B7CC1;
-}/*# sourceMappingURL=style.css.map */
+}
+/*# sourceMappingURL=style.css.map */
