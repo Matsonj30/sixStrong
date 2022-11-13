@@ -3,7 +3,9 @@
     .pricingContainer{
         max-width: 1300px;
        
-
+        display: flex;
+        flex-direction: column;
+        align-items: center;
         .popular{
             border: 4px solid $secondaryColor;
             position: relative;
@@ -12,11 +14,11 @@
             border: 4px solid $secondaryShade--;
         }
         .priceOption{
-            width: 350px;
+            width: calc(min(355px,97%));
             height: 450px;
             background-color: $primaryColor;
             border-radius: 10px;
-            margin: 15px 15px;
+            margin: 15px 0px;
             .topCheck{
                 position: absolute;
                 top: 10px;

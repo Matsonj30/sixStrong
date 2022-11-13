@@ -83,6 +83,13 @@ html {
     height: 75px;
   }
 }
+@media (max-width: 430px) {
+  .landing .navBar img {
+    width: 200px;
+    height: auto;
+    padding-left: 10px;
+  }
+}
 .landing .navBar .burgerMenu {
   position: absolute;
   right: 40px;
@@ -263,15 +270,6 @@ html {
   padding-top: 0px;
 }
 
-.drone {
-  transform: translate(1000px, -300px);
-}
-.drone img {
-  border-radius: 50%;
-  width: 300px;
-  height: auto;
-}
-
 @media (max-width: 1200px) {
   .introduction {
     padding-left: 10vw;
@@ -284,7 +282,20 @@ html {
 }
 @media (max-width: 650px) {
   .introduction {
-    width: 320px;
+    width: 310px;
+    padding-top: 10px;
+  }
+}
+@media (max-width: 430px) {
+  .introduction {
+    padding-left: 10px;
+    padding-top: 10px;
+  }
+  .introduction button {
+    margin-right: 10px;
+  }
+  .introduction p {
+    font-size: 15px;
   }
 }
 .services {
@@ -340,11 +351,19 @@ html {
   font-size: 16px;
 }
 
+@media (max-width: 470px) {
+  .services .service {
+    width: min(400px, 100%);
+  }
+}
 .pricing {
   padding-bottom: 50px;
 }
 .pricing .pricingContainer {
   max-width: 1300px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 .pricing .pricingContainer .popular {
   border: 4px solid #1B7CC1;
@@ -354,11 +373,11 @@ html {
   border: 4px solid #dee3e4;
 }
 .pricing .pricingContainer .priceOption {
-  width: 350px;
+  width: min(355px, 97%);
   height: 450px;
   background-color: #FAFAFA;
   border-radius: 10px;
-  margin: 15px 15px;
+  margin: 15px 0px;
 }
 .pricing .pricingContainer .priceOption .topCheck {
   position: absolute;
@@ -515,6 +534,9 @@ footer .logoAndDescription .description {
   }
   footer .logoAndDescription .description {
     text-align: center;
+  }
+  footer .logoAndDescription .description p {
+    font-size: 15px;
   }
 }
 @media (max-width: 600px) {

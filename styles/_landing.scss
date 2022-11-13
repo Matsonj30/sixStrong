@@ -58,3 +58,14 @@
         }
     }
 }
+@media(max-width:430px){
+    .landing{
+        .navBar{
+            img{
+                width: 200px;
+                height: auto;
+                padding-left: 10px;
+            }
+        }
+    }
+}

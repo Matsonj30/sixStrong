@@ -56,15 +56,7 @@
     }
 }
 
-.drone{
-    transform: translate(1000px, -300px);
-    img{
-       
-        border-radius: 50%;
-        width: 300px;
-        height: auto;
-    }
-}
+
 @media(max-width:1200px){
     .introduction{
         padding-left: 10vw;
@@ -79,6 +71,19 @@
 }
 @media(max-width:650px){
     .introduction{
-        width: 320px;
+        width: 310px;
+        padding-top: 10px;
+    }
+}
+@media(max-width:430px){
+    .introduction{
+        padding-left: 10px;
+        padding-top: 10px;
+        button{
+            margin-right: 10px;
+        }
+        p{
+            font-size: 15px;
+        }
     }
 }

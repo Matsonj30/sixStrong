@@ -51,3 +51,10 @@
         
     }
 }
+@media(max-width:470px){
+    .services{
+        .service{
+            width: calc(min(400px, 100%));
+        }
+    }
+}
