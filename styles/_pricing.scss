@@ -105,7 +105,12 @@
 @media(min-width: 650px){
     .pricingContainer{
         display: flex;
+        flex-direction: row !important;
         justify-content: center;
         flex-wrap: wrap;
+
+        .priceOption{
+            margin: 15px 15px !important;
+        }
     }
 }
