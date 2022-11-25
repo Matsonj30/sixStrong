@@ -14,10 +14,12 @@ footer{
             li{
                 transition: 0.25s ease-in-out;
                 padding-bottom: 10px;
+                :first-child{
+                    letter-spacing: 0.5px;
+                }
                 a{
                     text-decoration: none;
                     color: $primaryColor;
-
                     .fa{
                         padding-right: 5px;
                         width: 15px;

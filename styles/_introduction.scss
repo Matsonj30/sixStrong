@@ -9,7 +9,7 @@
     h1{
         font-size: 45px;
         padding-bottom: 15px;
-        font-size: bold;
+        font-weight: 600;
     
     }
     p{
@@ -30,7 +30,7 @@
         transition: 0.35s ease-in-out;
     }
     button:hover{
-        box-shadow: inset 150px 0 0 0 red;
+        box-shadow: inset 150px 0 0 0 $secondaryShade--;
         cursor: pointer;
     }
     .learnMoreCallNow{

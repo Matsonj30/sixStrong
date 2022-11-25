@@ -38,8 +38,9 @@ html {
   display: flex;
   justify-content: center;
   h1{
-    font-size: 45px;
+    font-size: 40px;
   }
+
   ::after{
       display: block;
       content: "";
@@ -49,9 +50,13 @@ html {
       margin-bottom: 20px;
   }
 }
+
+
+
 @import "_landing.scss";
 @import "_burgerMenu.scss";
 @import "_introduction.scss";
 @import "_services.scss";
 @import "_pricing.scss";
-@import "_footer.scss"
+@import "_footer.scss";
+@import "_portfolio.scss";

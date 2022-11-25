@@ -105,7 +105,7 @@
                 width: 600px;
                 padding-left: 15px;
                 #menu{
-                    transform: translateX(0);
+                    transform: translateX(0) !important;
                     background-color: transparent;
                     z-index: 3;
                     ul{
