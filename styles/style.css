@@ -755,7 +755,7 @@ footer .logoAndDescription .description {
   -webkit-box-shadow: 2px 4px 4px black;
           box-shadow: 2px 4px 4px black;
   height: 350px;
-  width: 700px;
+  width: 100%;
   margin: 10px 10px;
 }
 /*# sourceMappingURL=style.css.map */
