@@ -336,7 +336,7 @@ html {
 }
 .services .service .fa {
   font-size: 60px;
-  padding-top: 50px;
+  padding-top: 20px;
   padding-bottom: 10px;
   color: rgba(30, 175, 71, 0.475);
   color: #1B7CC1;
@@ -344,9 +344,12 @@ html {
 .services .service h3 {
   font-size: 20px;
   font-weight: 600;
+  padding-bottom: 5px;
 }
 .services .service p {
   font-size: 15px;
+  text-align: center;
+  padding: 5px 20px;
 }
 .services button {
   width: 150px;
@@ -566,7 +569,8 @@ footer .logoAndDescription .description {
   justify-content: center;
 }
 .portfolio .portfolioContainer img {
+  box-shadow: 2.4px 4.8px 4.8px hsla(0deg, 0%, 0%, 0.43);
   height: 350px;
-  width: 100px;
+  width: auto;
   margin: 10px 10px;
 }/*# sourceMappingURL=styles.css.map */

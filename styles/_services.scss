@@ -32,7 +32,7 @@
        
         .fa{
             font-size: 60px;
-            padding-top: 50px;
+            padding-top: 20px;
             padding-bottom: 10px;
             color: rgba(30, 175, 71, 0.475);
             color: $secondaryColor;
@@ -40,11 +40,13 @@
         h3{
             font-size: 20px;
             font-weight: 600;
-
+            padding-bottom: 5px;
            
         }
         p{
             font-size: 15px;
+            text-align: center;
+            padding: 5px 20px;
         }
     }
     button{
