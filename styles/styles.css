@@ -573,4 +573,11 @@ footer .logoAndDescription .description {
   height: 350px;
   width: auto;
   margin: 10px 10px;
+}
+
+@media (max-width: 800px) {
+  .portfolio .portfolioContainer img {
+    width: 100%;
+    height: auto;
+  }
 }/*# sourceMappingURL=styles.css.map */
