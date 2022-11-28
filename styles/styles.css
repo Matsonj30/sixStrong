@@ -282,7 +282,7 @@ html {
 }
 @media (max-width: 650px) {
   .introduction {
-    width: 310px;
+    width: 330px;
     padding-top: 10px;
   }
 }
