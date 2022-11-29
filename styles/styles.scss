@@ -51,7 +51,15 @@ html {
   }
 }
 
+.headerDescription{
+  max-width: 600px;
+  text-align: center;
+  padding-bottom: 20px;
+}
 
+.section{
+  transform: translateY(-30px)
+}
 
 @import "_landing.scss";
 @import "_burgerMenu.scss";

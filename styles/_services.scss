@@ -1,17 +1,12 @@
 .services{
     position: relative;
     z-index: 10;
-    transform: translateY(-0px);
     width: 100%;
     height: fit-content;
     z-index: 2;
     padding-bottom: 100px;
 
-    .headerDescription{
-        max-width: 600px;
-        text-align: center;
-        padding-bottom: 20px;
-    }
+
     .servicesContainer{
         height: fit-content;
         display: flex;
