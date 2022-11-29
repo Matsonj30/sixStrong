@@ -48,7 +48,7 @@ html {
 .header ::after {
   display: block;
   content: "";
-  border-bottom: 5px solid #1B7CC1;
+  border-bottom: 5px solid #216697;
   transform: scaleX(0.3);
   padding-bottom: 3px;
   margin-bottom: 20px;
@@ -190,7 +190,7 @@ html {
   letter-spacing: 1px;
 }
 .landing .navBar .hideOverFlow #menu ul li a:hover {
-  border-right: 4px solid #1B7CC1;
+  border-right: 4px solid #216697;
 }
 
 @media (min-width: 850px) {
@@ -357,7 +357,7 @@ html {
   padding-top: 20px;
   padding-bottom: 10px;
   color: rgba(30, 175, 71, 0.475);
-  color: #1B7CC1;
+  color: #216697;
 }
 .services .service h3 {
   font-size: 20px;
@@ -374,8 +374,8 @@ html {
   height: 50px;
   margin-top: 20px;
   background-color: transparent;
-  border: 3px solid #1B7CC1;
-  color: #1B7CC1;
+  border: 3px solid #216697;
+  color: #216697;
   border-radius: 5px;
   font-size: 16px;
 }
@@ -395,7 +395,7 @@ html {
   align-items: center;
 }
 .pricing .pricingContainer .popular {
-  border: 4px solid #1B7CC1;
+  border: 4px solid #216697;
   position: relative;
 }
 .pricing .pricingContainer .other {
@@ -437,7 +437,7 @@ html {
   height: 20px;
   padding: 0px 15px;
   border: 1px solid #dee3e4;
-  color: #1B7CC1;
+  color: #216697;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -464,7 +464,7 @@ html {
 }
 .pricing .pricingContainer .priceOption .priceFeatures ul li .fa {
   position: relative;
-  color: #1B7CC1;
+  color: #216697;
   font-size: 20px;
   padding-right: 7px;
   transform: translateY(4px);
@@ -479,7 +479,7 @@ html {
   content: "";
   border-style: solid;
   border-width: 64px 64px 0px 0px;
-  border-color: #1B7CC1 transparent;
+  border-color: #216697 transparent;
 }
 
 @media (min-width: 650px) {
@@ -496,7 +496,7 @@ html {
 footer {
   width: 100%;
   height: 275px;
-  background-color: #1B7CC1;
+  background-color: #216697;
   display: flex;
   justify-content: center;
   align-items: center;
