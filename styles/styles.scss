@@ -1,19 +1,37 @@
-$font1: "Poppins", sans-serif;
-$font2: "proxima-nova", sans-serif;
-
+//-------------------------------COLORS---------------------------------
 $primaryColor: #FAFAFA;
 $secondaryColor: #1B7CC1;
 $secondaryShade--: #025b6d13;
 $secondaryShade--: #E7EEEF;
 $secondaryShade--: #dee3e4; //temp
 $greycolor: rgba(129, 129, 129, 0.089);
+//-------------------------------COLORS---------------------------------
 
 
+//-------------------------------FONTS---------------------------------
+@font-face{
+  font-family: "Poppins";
+  font-style: normal;
+  src: url(../fonts/Poppins/Poppins-Regular.ttf);
+
+}
+@font-face{
+  font-family: "bold";
+  font-style: normal;
+  src: url(../fonts/Poppins/Poppins-Bold.ttf);
+}
+
+//-------------------------------FONTS---------------------------------
+
+//-------------------------------MULTI PURPOSE CSS---------------------------------
 *{
   margin: 0;   
   padding: 0;
-  font-family: $font1;
+  font-family: "Poppins";
 
+  h1{
+    font-family: "bold";
+  }
 }
 
 body{
@@ -38,7 +56,9 @@ html {
   display: flex;
   justify-content: center;
   h1{
+    font-family: "bold";
     font-size: 40px;
+
   }
 
   ::after{
@@ -61,6 +81,11 @@ html {
   transform: translateY(-30px)
 }
 
+
+//-------------------------------MULTI PURPOSE CSS---------------------------------
+
+
+//-------------------------------IMPORTS---------------------------------
 @import "_landing.scss";
 @import "_burgerMenu.scss";
 @import "_introduction.scss";
@@ -68,3 +93,6 @@ html {
 @import "_pricing.scss";
 @import "_footer.scss";
 @import "_portfolio.scss";
+
+
+//-------------------------------IMPORTS---------------------------------
