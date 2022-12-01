@@ -41,9 +41,6 @@ footer{
             padding-top: 15px;
             padding-right: 15px;
         }
-        .description{
-            width: 280px;
-        }
     }
 }
 @media(max-width:1337px){
@@ -72,7 +69,8 @@ footer{
             width: 100%;
             justify-content: center;
             flex-wrap: wrap;
-            padding: 30px 0px;
+            padding-top: 30px;
+            padding-bottom: 0px;
             .footerLogo{
                 width: 100%;
                 display: flex;
@@ -95,6 +93,9 @@ footer{
         .section{
          padding-bottom: 40px
       
+        }
+        .logoAndDescription{
+            padding-bottom: 0px;
         }
         .contact{
             text-align: center;

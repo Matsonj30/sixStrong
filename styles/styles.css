@@ -533,9 +533,6 @@ footer .logoAndDescription img {
   padding-top: 15px;
   padding-right: 15px;
 }
-footer .logoAndDescription .description {
-  width: 280px;
-}
 
 @media (max-width: 1337px) {
   footer .section ul {
@@ -561,7 +558,8 @@ footer .logoAndDescription .description {
     width: 100%;
     justify-content: center;
     flex-wrap: wrap;
-    padding: 30px 0px;
+    padding-top: 30px;
+    padding-bottom: 0px;
   }
   footer .logoAndDescription .footerLogo {
     width: 100%;
@@ -578,6 +576,9 @@ footer .logoAndDescription .description {
 @media (max-width: 649px) {
   footer .section {
     padding-bottom: 40px;
+  }
+  footer .logoAndDescription {
+    padding-bottom: 0px;
   }
   footer .contact {
     text-align: center;
