@@ -104,11 +104,10 @@
 }
 @media(min-width: 650px){
     .pricingContainer{
-        display: flex;
         flex-direction: row !important;
         justify-content: center;
         flex-wrap: wrap;
-
+        width: 1400px;
         .priceOption{
             margin: 15px 15px !important;
         }
