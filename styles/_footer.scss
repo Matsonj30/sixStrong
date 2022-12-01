@@ -37,11 +37,12 @@ footer{
         align-items: center;
         img{
             width: 250px;
-            height: 60px;
-            padding-right: 30px;
+            height: auto;
+            padding-top: 15px;
+            padding-right: 15px;
         }
         .description{
-            width: 450px;
+            width: 280px;
         }
     }
 }
@@ -64,6 +65,9 @@ footer{
             justify-content: center;
 
         }
+        .contact{
+            width: 250px;
+        }
         .logoAndDescription{
             width: 100%;
             justify-content: center;
@@ -85,11 +89,17 @@ footer{
         }
     }
 }
-@media(max-width:600px){
+
+@media(max-width:649px){
     footer{
         .section{
          padding-bottom: 40px
       
+        }
+        .contact{
+            text-align: center;
+
+ 
         }
     }
 }

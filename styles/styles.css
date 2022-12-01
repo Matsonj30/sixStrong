@@ -79,8 +79,8 @@ html {
   padding-top: 20px;
 }
 .landing .navBar img {
-  width: 400px;
-  height: 100px;
+  width: 275px;
+  height: auto;
   padding-left: 20vw;
 }
 
@@ -101,17 +101,11 @@ html {
     padding-left: 10vw;
   }
 }
-@media (max-width: 910px) {
-  .landing .navBar img {
-    width: 300px;
-    height: 75px;
-  }
-}
 @media (max-width: 430px) {
   .landing .navBar img {
     width: 200px;
     height: auto;
-    padding-left: 10px;
+    padding-left: 5px;
   }
 }
 .landing .navBar .burgerMenu {
@@ -312,8 +306,10 @@ html {
 }
 @media (max-width: 430px) {
   .introduction {
-    padding-left: 10px;
+    padding-left: 5px;
     padding-top: 10px;
+    width: 315px;
+    margin: 0;
   }
   .introduction button {
     margin-right: 10px;
@@ -533,11 +529,12 @@ footer .logoAndDescription {
 }
 footer .logoAndDescription img {
   width: 250px;
-  height: 60px;
-  padding-right: 30px;
+  height: auto;
+  padding-top: 15px;
+  padding-right: 15px;
 }
 footer .logoAndDescription .description {
-  width: 450px;
+  width: 280px;
 }
 
 @media (max-width: 1337px) {
@@ -557,6 +554,9 @@ footer .logoAndDescription .description {
     display: flex;
     justify-content: center;
   }
+  footer .contact {
+    width: 250px;
+  }
   footer .logoAndDescription {
     width: 100%;
     justify-content: center;
@@ -575,9 +575,12 @@ footer .logoAndDescription .description {
     font-size: 15px;
   }
 }
-@media (max-width: 600px) {
+@media (max-width: 649px) {
   footer .section {
     padding-bottom: 40px;
+  }
+  footer .contact {
+    text-align: center;
   }
 }
 .portfolio .portfolioContainer {
