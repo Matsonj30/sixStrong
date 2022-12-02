@@ -186,6 +186,7 @@ html {
 }
 .landing .navBar .hideOverFlow #menu ul li a:hover {
   border-right: 4px solid #1B7CC1;
+  cursor: pointer;
 }
 
 @media (min-width: 850px) {

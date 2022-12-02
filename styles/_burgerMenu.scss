@@ -68,7 +68,7 @@
                     text-align: right;
                     li{
                         padding: 20px 5px; 
-                     
+                        
                         a{
                             text-decoration: none;
                             color: black;  
@@ -83,6 +83,7 @@
                         }
                         a:hover{
                             border-right: 4px solid $secondaryColor;
+                            cursor: pointer;
                         }
                     
                     }
