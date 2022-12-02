@@ -29,6 +29,7 @@ body {
 
 html {
   overflow-x: initial !important;
+  scroll-behavior: smooth;
 }
 
 .wrapper {
@@ -318,7 +319,7 @@ html {
     font-size: 15px;
   }
 }
-.services {
+#services {
   position: relative;
   z-index: 10;
   width: 100%;
@@ -328,7 +329,7 @@ html {
   z-index: 2;
   padding-bottom: 100px;
 }
-.services .servicesContainer {
+#services .servicesContainer {
   height: -webkit-fit-content;
   height: -moz-fit-content;
   height: fit-content;
@@ -337,7 +338,7 @@ html {
   flex-wrap: wrap;
   max-width: 1401px;
 }
-.services .service {
+#services .service {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -348,24 +349,24 @@ html {
   margin: 5px 5px;
   border-radius: 15px;
 }
-.services .service .fa {
+#services .service .fa {
   font-size: 60px;
   padding-top: 20px;
   padding-bottom: 10px;
   color: rgba(30, 175, 71, 0.475);
   color: #1B7CC1;
 }
-.services .service h3 {
+#services .service h3 {
   font-size: 20px;
   font-weight: 600;
   padding-bottom: 5px;
 }
-.services .service p {
+#services .service p {
   font-size: 15px;
   text-align: center;
   padding: 5px 20px;
 }
-.services button {
+#services button {
   width: 150px;
   height: 50px;
   margin-top: 20px;
@@ -377,55 +378,55 @@ html {
 }
 
 @media (max-width: 470px) {
-  .services .service {
+  #services .service {
     width: min(400px, 100%);
   }
 }
-.pricing {
+#pricing {
   padding-bottom: 50px;
 }
-.pricing .pricingContainer {
+#pricing .pricingContainer {
   max-width: 1300px;
   display: flex;
   flex-direction: column;
   align-items: center;
 }
-.pricing .pricingContainer .popular {
+#pricing .pricingContainer .popular {
   border: 4px solid #1B7CC1;
   position: relative;
 }
-.pricing .pricingContainer .other {
+#pricing .pricingContainer .other {
   border: 4px solid #dee3e4;
 }
-.pricing .pricingContainer .priceOption {
+#pricing .pricingContainer .priceOption {
   width: min(355px, 97%);
   height: 450px;
   background-color: #FAFAFA;
   border-radius: 10px;
   margin: 15px 0px;
 }
-.pricing .pricingContainer .priceOption .topCheck {
+#pricing .pricingContainer .priceOption .topCheck {
   position: absolute;
   top: 10px;
   left: 8px;
   font-size: 20px;
   color: #FAFAFA;
 }
-.pricing .pricingContainer .priceOption .priceBox {
+#pricing .pricingContainer .priceOption .priceBox {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
-.pricing .pricingContainer .priceOption .priceBox h4 {
+#pricing .pricingContainer .priceOption .priceBox h4 {
   font-size: 50px;
   font-weight: 100;
 }
-.pricing .pricingContainer .priceOption .priceBox p {
+#pricing .pricingContainer .priceOption .priceBox p {
   font-weight: 600;
   transform: translateY(-6px);
   padding-bottom: 11px;
 }
-.pricing .pricingContainer .priceOption .priceBox .addBorder {
+#pricing .pricingContainer .priceOption .priceBox .addBorder {
   position: relative;
   width: -webkit-fit-content;
   width: -moz-fit-content;
@@ -441,7 +442,7 @@ html {
   z-index: 1;
   background-color: #FAFAFA;
 }
-.pricing .pricingContainer .priceOption .priceBox .line {
+#pricing .pricingContainer .priceOption .priceBox .line {
   position: relative;
   width: 290px;
   height: 1px;
@@ -449,23 +450,23 @@ html {
   z-index: 0;
   transform: translateY(-16px);
 }
-.pricing .pricingContainer .priceOption .priceFeatures ul {
+#pricing .pricingContainer .priceOption .priceFeatures ul {
   padding: 20px 20px;
 }
-.pricing .pricingContainer .priceOption .priceFeatures ul li {
+#pricing .pricingContainer .priceOption .priceFeatures ul li {
   display: flex;
   padding-top: 15px;
   padding-left: 9px;
   font-size: 18px;
 }
-.pricing .pricingContainer .priceOption .priceFeatures ul li .fa {
+#pricing .pricingContainer .priceOption .priceFeatures ul li .fa {
   position: relative;
   color: #1B7CC1;
   font-size: 20px;
   padding-right: 7px;
   transform: translateY(4px);
 }
-.pricing .pricingContainer .popular::before {
+#pricing .pricingContainer .popular::before {
   width: 0;
   height: 0;
   position: absolute;
@@ -584,13 +585,13 @@ footer .logoAndDescription img {
     text-align: center;
   }
 }
-.portfolio .portfolioContainer {
+#portfolio .portfolioContainer {
   max-width: 1900px;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
 }
-.portfolio .portfolioContainer img {
+#portfolio .portfolioContainer img {
   box-shadow: 2.4px 4.8px 4.8px hsla(0deg, 0%, 0%, 0.43);
   height: 350px;
   width: auto;
@@ -598,7 +599,7 @@ footer .logoAndDescription img {
 }
 
 @media (max-width: 800px) {
-  .portfolio .portfolioContainer img {
+  #portfolio .portfolioContainer img {
     width: 100%;
     height: auto;
   }

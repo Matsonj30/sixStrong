@@ -9,3 +9,8 @@ function burgerMenu(){
         menu.style.transform = "translate(200px)";
     }
 }
+
+function scrollToDiv(location){
+    document.getElementById(location).scrollIntoView({behaviour: "smooth"});
+
+}

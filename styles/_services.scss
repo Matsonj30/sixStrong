@@ -1,4 +1,4 @@
-.services{
+#services{
     position: relative;
     z-index: 10;
     width: 100%;
@@ -57,7 +57,7 @@
     }
 }
 @media(max-width:470px){
-    .services{
+    #services{
         .service{
             width: calc(min(400px, 100%));
         }

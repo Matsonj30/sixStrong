@@ -36,10 +36,10 @@
         <div class="hideOverFlow">
             <div id="menu">
                 <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="index.html">Services</a></li>
-                <li><a href="index.html">Portfolio</a></li>
-                <li><a href="index.html">Contact</a></li>
+                <li><a  onclick="scrollToDiv('services')">Services</a></li>
+                <li><a  onclick="scrollToDiv('pricing')">Pricing</a></li>
+                <li><a  onclick="scrollToDiv('portfolio')">Portfolio</a></li>
+                <li><a  onclick="scrollToDiv('footer')">Contact</a></li>
                 </ul>
             </div>
             
@@ -72,7 +72,7 @@
 <!-------------------------------------------------------------------------------------->
 <!-----------------------------------SERVICES------------------------------------------->
 <!-------------------------------------------------------------------------------------->
-    <div class="section services">
+    <div class="section" id="services">
         <div class="header"><h1>WHAT WE DO</h1></div>
         <div class="wrapper">
             <div class="headerDescription">
@@ -129,7 +129,7 @@
 <!-------------------------------------------------------------------------------------->
 <!-----------------------------------PRICING-------------------------------------------->
 <!-------------------------------------------------------------------------------------->
-<div class="section pricing">
+<div class="section" id="pricing">
     <div class="header"><h1>Pricing</h1></div>
 
     <div class="wrapper">
@@ -210,7 +210,7 @@
 <!-----------------------------------PORTFOLIO------------------------------------------->
 <!-------------------------------------------------------------------------------------->
 
-<div class="section portfolio">
+<div class="section" id="portfolio">
     <div class="header"><h1>Our Portfolio</h1></div>
 
     <div class="wrapper">
@@ -239,7 +239,7 @@
 <!-------------------------------------------------------------------------------------->
 <!-----------------------------------FOOTER--------------------------------------------->
 <!-------------------------------------------------------------------------------------->
-<footer>
+<footer id="footer">
     <div class="logoAndDescription section">
         <div class=footerLogo><img src="../images/logo.webp" alt="companyLogo"></div>
     </div>
