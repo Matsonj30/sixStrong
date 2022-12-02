@@ -524,6 +524,7 @@ footer .section ul li a .fa {
 }
 footer .section ul li:not(:first-child):hover {
   opacity: 50%;
+  cursor: pointer;
 }
 footer .logoAndDescription {
   display: flex;
