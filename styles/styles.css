@@ -196,7 +196,7 @@ html {
     position: relative;
     height: 90px;
     width: 600px;
-    padding-left: 15px;
+    padding-left: 25px;
   }
   .landing .navBar .hideOverFlow #menu {
     transform: translateX(0) !important;
