@@ -452,7 +452,7 @@ html {
   transform: translateY(-16px);
 }
 #pricing .pricingContainer .priceOption .priceFeatures ul {
-  padding: 20px 20px;
+  padding: 0px 20px;
 }
 #pricing .pricingContainer .priceOption .priceFeatures ul li {
   display: flex;
@@ -481,14 +481,17 @@ html {
 }
 
 @media (min-width: 650px) {
-  .pricingContainer {
+  #pricing .pricingContainer {
     flex-direction: row !important;
     justify-content: center;
     flex-wrap: wrap;
     width: 1400px;
   }
-  .pricingContainer .priceOption {
+  #pricing .pricingContainer .priceOption {
     margin: 15px 15px !important;
+  }
+  #pricing .pricingContainer .priceOption .priceFeatures ul {
+    padding: 10px 20px;
   }
 }
 footer {

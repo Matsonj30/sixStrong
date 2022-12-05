@@ -68,7 +68,7 @@
             }
             .priceFeatures{
                 ul{
-                    padding: 20px 20px;
+                    padding: 0px 20px;
 
                     li{
                         display: flex;
@@ -103,13 +103,23 @@
     }
 }
 @media(min-width: 650px){
-    .pricingContainer{
-        flex-direction: row !important;
-        justify-content: center;
-        flex-wrap: wrap;
-        width: 1400px;
-        .priceOption{
-            margin: 15px 15px !important;
+    #pricing{
+        .pricingContainer{
+            flex-direction: row !important;
+            justify-content: center;
+            flex-wrap: wrap;
+            width: 1400px;
+            .priceOption{
+                margin: 15px 15px !important;
+    
+                .priceFeatures{
+                    ul{
+                        padding: 10px 20px;
+                    }
+                }
+            }
+            
         }
     }
+    
 }
